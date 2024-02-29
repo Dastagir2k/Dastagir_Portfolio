@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary{
+  background: rgb(85 , 85, 85)
+}
+.bg-secondary{
+  background: rgb(51 , 51, 51)
+}
+
+.mobile-nav{
+  @apply fixed top-10 left-0 bg-gray-600 w-full h-1/4;
+}
+
+.mobile-nav  li{
+  @apply w-full h-full text-center border-b-2;
+}
