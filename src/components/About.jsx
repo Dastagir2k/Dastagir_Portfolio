@@ -10,7 +10,7 @@ export default function About () {
         line3: 'In backend I know Node.js, Express.js, MongoDB, and Mongoose'
     }
 
-    return <section className='flex flex-col md:flex-row bg-gradient-to-b h-screen from-gray-800 to-black px-5' id='about'>
+    return <section className='flex flex-col md:flex-row h-[calc(100dvh)] bg-gradient-to-b  from-gray-800 to-black px-5' id='about'>
         <div className='py-5 md:w-1/2'>
             <img src={AboutImg} />
         </div>

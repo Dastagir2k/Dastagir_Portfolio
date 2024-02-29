@@ -3,7 +3,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { AiOutlineGithub,AiOutlineLinkedin } from "react-icons/ai";
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row px-5 py-32 bg-gradient-to-b from-gray-800 to-black justify-center">
+    <section id="home" className="flex flex-col md:flex-row px-5 py-32 bg-gradient-to-b from-gray-800 to-black justify-center">
       <div className="md:w-1/2 flex flex-col">
         <h1 className=" text-white text-7xl font-hero-font">
           Hi,
