@@ -44,39 +44,39 @@ const Skills = () => {
           <p className="py-6">These are the Technologies I have worked with .</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-8 px-4 md:px-12">
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
-            <AiOutlineHtml5 size={80} className="w-20 mx-auto" />
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
+            <AiOutlineHtml5 size={80} className="w-20 mx-auto " />
             <p className="mt-4">HTML</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
-            <FaCss3Alt size={80} className="w-20 mx-auto" />
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
+            <FaCss3Alt size={80} className="w-20 mx-auto " />
             <p className="mt-4">CSS</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
-            <TbBrandJavascript size={80} className="w-20 mx-auto" />
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400 ">
+            <TbBrandJavascript size={80} className="w-20 mx-auto " />
             <p className="mt-4">JavaScript</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <FaReact size={80} className="w-20 mx-auto" />
             <p className="mt-4">React.js</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <TbBrandCpp size={80} className="w-20 mx-auto" />
             <p className="mt-4">C++</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <FaNode size={80} className="w-20 mx-auto" />
             <p className="mt-4">Node.js</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <SiExpress size={80} className="w-20 mx-auto" />
             <p className="mt-4">Express.js</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <DiMongodb size={80} className="w-20 mx-auto" />
             <p className="mt-4">MongoDB</p>
           </div>
-          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
+          <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg hover:text-purple-400">
             <SiMysql size={80} className="w-20 mx-auto" />
             <p className="mt-4">MySQL</p>
           </div>
