@@ -21,3 +21,7 @@
   @apply absolute left-0 right-0 bottom-0 top-0 bg-gray-500 opacity-0 duration-700 hover:opacity-100;
 }
 
+body{
+  @apply bg-gradient-to-b  from-gray-800 to-black;
+}
+

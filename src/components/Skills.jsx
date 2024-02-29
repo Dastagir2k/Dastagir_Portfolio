@@ -1,8 +1,7 @@
-
-
-
-
-
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -14,11 +13,34 @@ import { DiMongodb } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 
 const Skills = () => {
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
-    <section id="skills"className="md:pt-10 bg-gradient-to-b from-gray-800 to-black text-white min-h-screen">
+    <motion.section
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      id="skills"
+      className="md:pt-10 bg-gradient-to-b from-gray-800 to-black text-white min-h-screen"
+    >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center pt-10">
         <div className="">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline pt-10">Experience</p>
+          <p className="text-4xl font-bold border-b-4 p-2 inline pt-10 text-purple-400 border-purple-400">
+            Experience
+          </p>
           <p className="py-6">These are the Technologies I have worked with</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-8 px-4 md:px-12">
@@ -60,8 +82,8 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </motion.section>
+  );
+};
 
 export default Skills;

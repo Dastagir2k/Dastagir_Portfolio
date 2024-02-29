@@ -1,4 +1,7 @@
 import "./App.css"
+// import ScrollAnimationComponent from "./ScrrollANimation"
+// import ScrollAnimationComponent from "./ScrrollANimation"
+
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Header from "./components/Header"
@@ -9,12 +12,13 @@ import Skills from "./components/Skills"
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+     <Header/>
+     <Hero/>
+     <About/>
+     <Skills/>
+     <Projects/>
+     <Contact/>
+     {/* <ScrollAnimationComponent/> */}
     </div>
   )
 }

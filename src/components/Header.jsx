@@ -5,7 +5,7 @@ const Header = () => {
   const [togglemenu, setToggle] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full px-5 py-2 bg-primary text-white z-50">
+    <header className="fixed top-0 left-0 w-full px-5 py-2 bg-primary text-white z-50 ">
       <div className="max-w-screen-lg mx-auto flex justify-between items-center ">
         <a className="text-bold" href="#">
           Dastagir
@@ -13,27 +13,52 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex gap-x-5">
             <li>
-              <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-purple-400"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="about" smooth={true} duration={500}className="cursor-pointer">
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-purple-400"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="skills" smooth={true} duration={500}className="cursor-pointer">
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-purple-400"
+              >
                 Skills
               </Link>
             </li>
             <li>
-              <Link to="project" smooth={true} duration={500}className="cursor-pointer">
+              <Link
+                to="project"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-purple-400"
+              >
                 Project
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={500}className="cursor-pointer">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-purple-400"
+              >
                 Contact
               </Link>
             </li>
@@ -43,31 +68,56 @@ const Header = () => {
         {togglemenu && (
           <nav className="md:hidden">
             <ul className="flex flex-col mobile-nav">
-            <li>
-              <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="about" smooth={true} duration={500}className="cursor-pointer">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="skills" smooth={true} duration={500}className="cursor-pointer">
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link to="project" smooth={true} duration={500}className="cursor-pointer">
-                Project
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" smooth={true} duration={500}className="cursor-pointer">
-                Contact
-              </Link>
-            </li>
+              <li>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-purple-400"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-purple-400"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="skills"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-purple-400"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="project"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-purple-400"
+                >
+                  Project
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-purple-400"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </nav>
         )}
