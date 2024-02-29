@@ -39,39 +39,3 @@ const ScrollAnimationComponent = () => {
 export default ScrollAnimationComponent;
 
 
-
-// import { useEffect, useState } from 'react';
-// import { motion, useViewportScroll } from 'framer-motion';
-// import About from './components/About';
-
-// const ScrollAnimationComponent = () => {
-//   const [scrollY, setScrollY] = useState(0);
-//   const { scrollYProgress } = useViewportScroll();
-
-//   useEffect(() => {
-//     const updateScrollY = () => {
-//       setScrollY(scrollYProgress.get());
-//     };
-
-//     scrollYProgress.onChange(updateScrollY);
-
-//     return () => {
-//       scrollYProgress.clearListeners();
-//     };
-//   }, [scrollYProgress]);
-
-//   return (
-//     <motion.div
-//       animate={{ opacity: scrollY > 0.5 ? 1 : 0 }}
-//       transition={{ duration: 0.3 }}
-//     >
-//       <About/>
-//       <About/>
-//       <About/>
-//       <About/>
-//       <About/>
-//     </motion.div>
-//   );
-// };
-
-// export default ScrollAnimationComponent;
