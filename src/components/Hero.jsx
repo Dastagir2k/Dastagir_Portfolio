@@ -32,8 +32,8 @@ const Hero = () => {
       <div className="md:w-1/2 flex flex-col">
         <h1 className=" text-white text-7xl font-hero-font">
           Hi,
-          <br /> Im Dastagir
-          <p className="text-4xl ">Im a Full-stack Developer</p>
+          <br /> {`I'm`} Dastagir
+          <p className="text-4xl ">I m a Full-stack Developer</p>
         </h1>
         <div className="flex py-20 ">
           <a href="https://twitter.com/DastagirAhmed14" target="_blank" className="pr-4 text-purple-400 hover:text-white ">
