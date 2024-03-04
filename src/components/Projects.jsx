@@ -38,7 +38,7 @@ const Projects = () => {
       {
         image: websiteImg3,
         description: "An intuitive recipe application providing step-by-step instructions and ingredient lists for various dishes.",
-        link: "hhttps://dastagir-recipie.vercel.app/",
+        link: "https://dastagir-recipie.vercel.app/",
       },
     ],
   };
