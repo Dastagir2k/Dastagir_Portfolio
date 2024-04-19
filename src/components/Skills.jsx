@@ -55,6 +55,7 @@ const Skills = () => {
                 left: 0,
                 right: 0,
               }}
+              
               whileHover={{
                 scale: [1, 1, 1.4, 1.4, 1],
                 borderRadius: ["20%", "20%", "50%", "50%", "20%"],
