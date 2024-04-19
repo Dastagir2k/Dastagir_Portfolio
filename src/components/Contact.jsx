@@ -3,26 +3,12 @@ import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const Contact = () => {
-  const boxVariant = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
-  const control = useAnimation();
-  const [ref, inView] = useInView();
+  
 
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
+
   return (
-    <motion.section
-      ref={ref}
-      variants={boxVariant}
-      initial="hidden"
-      animate={control}
+    <section
+     
       id="contact"
       className="w-full h-screen bg-gradient-to-b  from-gray-800 to-black  p-4 text-white"
     >
@@ -66,7 +52,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

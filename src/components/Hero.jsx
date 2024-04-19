@@ -20,8 +20,9 @@ const Hero = () => {
       control.start("hidden");
     }
   }, [control, inView]);
+  const texts=["Hi,", "I'm Dastagir", "I'm a Full-stack Developer"]
   return (
-    <motion.section
+    <div
       ref={ref}
       variants={boxVariant}
       initial="hidden"
@@ -30,11 +31,16 @@ const Hero = () => {
       className="flex flex-col md:flex-row px-5 py-32 bg-gradient-to-b from-gray-800 to-black justify-center"
     >
       <div className="md:w-1/2 flex flex-col">
-        <h1 className=" text-white text-7xl font-hero-font">
-          Hi,
-          <br /> {`I'm`} Dastagir
-          <p className="text-4xl ">I m a Full-stack Developer</p>
-        </h1>
+        {texts.map((text,i)=>(
+          <motion.span
+          initial={{opacity:0}}
+          animate={{opacity:5}}
+          transition={{
+            duration: 0.5,
+             delay: i *0.9 }}
+          className="text-5xl text-white p-3">{text}
+          <br/></motion.span>
+        ))}
         <div className="flex py-20 ">
           <a href="https://twitter.com/DastagirAhmed14" target="_blank" className="pr-4 text-purple-400 hover:text-white ">
             <BsTwitterX size={35} />
@@ -48,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       <img className=" md:w-1/3" src={HeriImg} />
-    </motion.section>
+    </div>
   );
 };
 

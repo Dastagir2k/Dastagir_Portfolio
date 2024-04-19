@@ -44,7 +44,7 @@ const Projects = () => {
   };
 
   return (
-    <motion.section
+    <div
       ref={ref}
       variants={boxVariant}
       initial="hidden"
@@ -64,10 +64,29 @@ const Projects = () => {
         </div>
       </div>
       <div className="flex-grow">
-        <div className="flex flex-col md:flex-row px-10 gap-5">
+        <div className="flex flex-col md:flex-row px-10 gap-5 ">
           {config.projects.map((project, index) => (
-            <div className="relative" key={index}>
-              <img
+            <div className="relative" 
+            key={index}
+            
+             >
+              <motion.img
+                initial={{
+                  x:-300,
+                  opacity:0.5
+                }}
+                whileInView={{
+                  
+                  x:1,
+                  opacity:1,
+                  
+                }}
+                
+                transition={{
+                  type:"spring",
+                  stiffness:20,
+                  duration:4
+                }}
                 className="h-[300px] w-[500px]"
                 src={project.image}
                 alt={`Project ${index + 1}`}
@@ -87,9 +106,10 @@ const Projects = () => {
               </div>
             </div>
           ))}
+           
         </div>
       </div>
-    </motion.section>
+    </div>
   );
 };
 
