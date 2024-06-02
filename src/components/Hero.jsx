@@ -1,4 +1,4 @@
-import HeriImg from "../assets/Lovepik_com-401643778-programmer.png";
+import HeriImg from "../assets/profile_blur.jpg";
 import { BsTwitterX } from "react-icons/bs";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -53,7 +53,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <img className=" md:w-1/3" src={HeriImg} />
+      <img className=" md:w-1/3 relative" src={HeriImg} />
     </div>
   );
 };
