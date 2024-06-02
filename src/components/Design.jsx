@@ -44,11 +44,11 @@ const particlesLoaded = useCallback(async container => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.5,
                         },
                     },
                 },
