@@ -44,11 +44,11 @@ const particlesLoaded = useCallback(async container => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.5,
                         },
                     },
                 },
@@ -78,7 +78,7 @@ const particlesLoaded = useCallback(async container => {
                             enable: false,
                             area: 800,
                         },
-                        value: 80,
+                        value: 40,
                     },
                     opacity: {
                         value: 0.5,

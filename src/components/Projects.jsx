@@ -1,6 +1,6 @@
 
-
-import websiteImg1 from "../assets/netflix_project.jfif";
+import websiteImg4 from "../assets/netflix_project.jfif";
+import websiteImg1 from "../assets/reserve-eat.png";
 import websiteImg2 from "../assets/Nike.png";
 import websiteImg3 from "../assets/recipe.png";
 import { useEffect } from "react";
@@ -26,6 +26,11 @@ const Projects = () => {
     projects: [
       {
         image: websiteImg1,
+        description: "A hotel table booking platform where customers can browse a variety of restaurants and book tables. Built with React for the frontend, Node.js and Express for the backend, and MySQL for the database. The platform includes user authentication, email notifications for bookings, and an admin interface for managing restaurants and bookings",
+        link: "https://dastagir-reserve-eat.vercel.app/",
+      },
+      {
+        image: websiteImg4,
         description: "A Netflix-inspired streaming platform featuring user authentication, built with React, Firebase, and integrated with a movies API",
         link: "https://dastagir-netflix.vercel.app/",
       },
@@ -40,6 +45,7 @@ const Projects = () => {
         description: "An intuitive recipe application providing step-by-step instructions and ingredient lists for various dishes.",
         link: "https://dastagir-recipie.vercel.app/",
       },
+      
     ],
   };
 
@@ -64,11 +70,10 @@ const Projects = () => {
         </div>
       </div>
       <div className="flex-grow">
-        <div className="flex flex-col md:flex-row px-10 gap-5 ">
+        <div className="grid md:grid-cols-2  px-24 gap-3 ">
           {config.projects.map((project, index) => (
             <div className="relative" 
             key={index}
-            
              >
               <motion.img
                 initial={{
@@ -87,11 +92,11 @@ const Projects = () => {
                   stiffness:20,
                   duration:4
                 }}
-                className="h-[300px] w-[500px]"
+                className="md:h-[400px] md:w-[600px] h-[200px] w-[400px]"
                 src={project.image}
                 alt={`Project ${index + 1}`}
               />
-              <div className="project-desc">
+              <div className="project-desc md:h-[400px] md:w-[600px] h-[200px] w-[400px]">
                 <p className="text-center px-5 py-5">{project.description}</p>
                 <div className="flex justify-center">
                   <a
