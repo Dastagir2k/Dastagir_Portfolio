@@ -53,12 +53,10 @@ const Hero = () => {
           </a>
         </div>
       </div>
-<<<<<<< HEAD
       <img className="md:w-1/3 relative" src={HeriImg} />
 =======
-      <img className=" md:w-1/3 relative" src={HeriImg} />
->>>>>>> 808ec23c17c1b02f744e73fc4af4455192fbe7ee
     </div>
+
   );
 };
 
