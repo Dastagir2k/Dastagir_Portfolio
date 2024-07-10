@@ -25,6 +25,12 @@ const Projects = () => {
   const config = {
     projects: [
       {
+        image: websiteImg2,
+        description:
+          "A dynamic e-commerce platform offering Nike products, powered by React and styled with Tailwind CSS.",
+        link: "https://dastagir-nike.vercel.app/",
+      },
+      {
         image: websiteImg1,
         description: "A hotel table booking platform where customers can browse a variety of restaurants and book tables. Built with React for the frontend, Node.js and Express for the backend, and MySQL for the database. The platform includes user authentication, email notifications for bookings, and an admin interface for managing restaurants and bookings",
         link: "https://dastagir-reserve-eat.vercel.app/",
@@ -34,12 +40,7 @@ const Projects = () => {
         description: "A Netflix-inspired streaming platform featuring user authentication, built with React, Firebase, and integrated with a movies API",
         link: "https://dastagir-netflix.vercel.app/",
       },
-      {
-        image: websiteImg2,
-        description:
-          "A dynamic e-commerce platform offering Nike products, powered by React and styled with Tailwind CSS.",
-        link: "https://dastagir-nike.vercel.app/",
-      },
+      
       {
         image: websiteImg3,
         description: "An intuitive recipe application providing step-by-step instructions and ingredient lists for various dishes.",
