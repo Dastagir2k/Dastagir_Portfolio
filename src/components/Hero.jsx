@@ -54,7 +54,6 @@ const Hero = () => {
         </div>
       </div>
       <img className="md:w-1/3 relative" src={HeriImg} />
-=======
     </div>
 
   );
