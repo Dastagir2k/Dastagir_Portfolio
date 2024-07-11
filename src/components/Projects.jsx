@@ -159,7 +159,7 @@ const Projects = () => {
       {
         image: websiteImg1,
         description:
-          "A hotel table booking platform where customers can browse a variety of restaurants and book tables. Built with React for the frontend, Node.js and Express for the backend, and MySQL for the database. The platform includes user authentication, email notifications for bookings, and an admin interface for managing restaurants and bookings",
+          "A hotel table booking platform where customers can browse a variety of restaurants and book tables. The platform includes user authentication, email notifications for bookings, and an admin interface for managing restaurants and bookings",
         link: "https://dastagir-reserve-eat.vercel.app/",
       },
       {
@@ -207,8 +207,8 @@ const Projects = () => {
                 src={project.image}
                 alt={`Project ${index + 1}`}
               />
-              <div className="project-desc absolute inset-0 flex flex-col justify-center items-center md:text-2xl font-light py-10 bg-gray-500 bg-opacity-75 duration-700 hover:opacity-100 rounded-3xl">
-                <p className="text-center px-5 py-5">{project.description}</p>
+              <div className="project-desc absolute inset-0 flex flex-col justify-center items-center md:text-2xl font-light py-12 bg-gray-500 bg-opacity-75 duration-700 hover:opacity-100 rounded-3xl">
+                <p className="text-center px-5 py-2">{project.description}</p>
                 <div className="flex justify-center">
                   <a
                     className="btn bg-purple-500 text-white px-3 font-semibold rounded-md py-2"
