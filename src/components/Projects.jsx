@@ -128,11 +128,13 @@ import websiteImg1 from "../assets/reserve-eat.png";
 import websiteImg2 from "../assets/Nike.png";
 import websiteImg3 from "../assets/recipe.png";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
+
+  
   const boxVariant = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
