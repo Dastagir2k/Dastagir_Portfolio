@@ -61,7 +61,7 @@ const WelcomePage = () => {
         >
           <motion.img
             src='../code.png'
-            className='h-1/2 w-1/3 font-thin px-4'
+            className='md:h-1/2 md:w-1/3 font-thin px-4'
             animate={{
               y: ['20%', '-20%'],
               scale: [1, 1.2, 1],
@@ -75,7 +75,7 @@ const WelcomePage = () => {
             }}
           />
           <br />
-          <h1 className="text-white text-4xl px-4">
+          <h1 className="text-white  md:text-4xl px-4">
             <span id="typing-text" className="typing-container text-white font-hero-font"></span>
           </h1>
         </motion.div>
