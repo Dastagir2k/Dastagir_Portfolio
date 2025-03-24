@@ -11,10 +11,10 @@ export default function About() {
   
   const config = {
     line1:
-      "Hi, My name is S Dastagir Ahmed. I am a Full stack web developer. I built beautiful Websites with React.js and Tailwind CSS + Bootstrap",
+      "Hi, My name is S Dastagir Ahmed. I am a Full stack web developer. I built beautiful Websites with React.js , Tailwind CSS + Bootstrap , node.js and Express.js.",
     line2:
       "I am proficient in Frontend skills like React.js, Redux, Redux Tool Kit, Axios, Tailwind CSS, SaSS, Css3 and many more.",
-    line3: "In backend I know Node.js, Express.js, Mysql , MongoDB, and Mongoose",
+    line3: "In backend I worked with Node.js, Express.js, Mysql , MongoDB, and Mongoose",
   };
 
   return (
